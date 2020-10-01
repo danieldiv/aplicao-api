@@ -23,7 +23,7 @@ public class Pessoa {
 	@Valid
 	@Embedded
 	private Endereco endereco;
-
+	
 	public Long getCodigo() {
 		return codigo;
 	}
@@ -40,6 +40,8 @@ public class Pessoa {
 		this.nome = nome;
 	}
 
+	@Valid
+	@Embedded
 	public Endereco getEndereco() {
 		return endereco;
 	}

@@ -1,4 +1,4 @@
-package com.sanches.alertamed.api.resouce;
+package com.sanches.alertamed.api.resource;
 
 import javax.validation.Valid;
 
