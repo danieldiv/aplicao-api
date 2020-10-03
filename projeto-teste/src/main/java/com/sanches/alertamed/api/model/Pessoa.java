@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "paciente")
@@ -18,12 +19,13 @@ public class Pessoa {
 	private Long codigo;
 
 	@NotNull
+	@Size(min = 5, max = 10)
 	private String nome;
 
 	@Valid
 	@Embedded
 	private Endereco endereco;
-	
+
 	public Long getCodigo() {
 		return codigo;
 	}
@@ -40,8 +42,6 @@ public class Pessoa {
 		this.nome = nome;
 	}
 
-	@Valid
-	@Embedded
 	public Endereco getEndereco() {
 		return endereco;
 	}

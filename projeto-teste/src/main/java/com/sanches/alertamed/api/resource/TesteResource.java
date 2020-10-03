@@ -23,11 +23,5 @@ public class TesteResource {
 	public void salvar(@Valid @RequestBody Pessoa pessoa) {
 		System.out.println("salvando");
 	}
-	
-//	@PostMapping
-//	public ResponseEntity<Paciente> salvar(@Valid @RequestBody Paciente paciente, HttpServletResponse response) {
-//		Paciente pacienteSalvo = this.pacienteRepository.save(paciente);
-//		return ResponseEntity.status(HttpStatus.CREATED).body(pacienteSalvo);
-//	}
 
 }
